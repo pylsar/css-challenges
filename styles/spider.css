@@ -25,6 +25,8 @@
     position: absolute;
     top: 0;
   }
+
+  /* spider leg 1 */
   .spider__leg-one{
     height: 300px;
     left: 0;  
@@ -77,7 +79,7 @@
     border-right: 6px solid black;
   }
   
-  /**/
+  /* spider leg 2 */
   
   .spider__leg-two{
     left: 40px;  
@@ -114,6 +116,9 @@
     border-right: 6px solid black;
   }
   
+
+  /* spider body */
+
   .spider__body{
     width: 100px;
     height: 400px;
@@ -232,11 +237,9 @@
     left: 35px;
   }
   
-  
-  
-  /*???*/
-  
-  
+   
+  /* spider leg 3 */
+    
   .spider__leg-three{
     height: 300px;
     right: 0;  
@@ -280,9 +283,10 @@
     border-left: 6px solid black;
   }
   
+/* spider leg 4 */
+
   .spider__leg-four{
     right: 40px;
-    // border: 1px solid red;
   }
   
   .spider__leg-four .spider__block{
