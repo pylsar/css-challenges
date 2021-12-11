@@ -1,0 +1,325 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+  .spider{
+    width: 100%;
+    height: 100vh;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .spider__box{
+    width: 300px;
+    height: 400px;
+    position: relative;
+  }
+  .spider__leg {
+    height: 400px;
+    width: 6px;
+    background: black;
+    position: absolute;
+    top: 0;
+  }
+  .spider__leg-one{
+    height: 300px;
+    left: 0;  
+    transform: translateY(30px);
+  }
+  
+  .spider__block{
+    width: 40px;
+    height: 50px;
+    background: skyblue;
+    position: absolute;
+    top: 30%;
+    overflow: hidden;
+  }
+  .spider__block-one::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(20deg);
+    top: -38px;
+    left: 0;
+    border-bottom: 6px solid black;
+    z-index: 3;
+  }
+  .spider__block-one::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(-20deg);
+    top: 38px;
+    left: 0;
+    border-top: 6px solid black;
+    z-index: 3;
+  }
+  .spider__block-help{
+    width: 40px;
+    height: 26px;
+    background: skyblue;
+    position: absolute;
+    z-index: 2;
+  }
+  .spider__block-help-one{
+    top: calc( 30% + 14px );
+    border-right: 6px solid black;
+  }
+  
+  /**/
+  
+  .spider__leg-two{
+    left: 40px;  
+  }
+  .spider__block-two::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(20deg);
+    top: -38px;
+    left: 0;
+    border-bottom: 6px solid black;
+    z-index: 3;
+  }
+  .spider__block-two::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(-20deg);
+    top: 38px;
+    left: 0;
+    border-top: 6px solid black;
+    z-index: 3;
+  }
+  
+  .spider__block-help-two{
+    top: calc( 30% + 14px );
+    border-right: 6px solid black;
+  }
+  
+  .spider__body{
+    width: 100px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .spider__body-head{
+    width: 60px;
+    height: 60px;
+    background: black;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    border-radius: 50% 50% 0 0;
+  }
+  .spider__body-head::before{
+    content: '';
+    display: block;
+    background: skyblue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    left: 40px;
+    transform: rotate(50deg);
+  }
+  .spider__body-head::after{
+    content: '';
+    display: block;
+    background: skyblue;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 65%;
+    right: 40px;
+    transform: rotate(-50deg);
+  }
+  .spider__body-body{
+    width: 80px;
+    height: 160px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    z-index: 2;
+  }
+  
+  .spider__body-body::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: black;
+    transform: rotate(-40deg);
+    top: -14px;
+    right: -12px;
+    z-index: 1;
+  }
+  
+  .spider__body-body::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: black;
+    transform: rotate(40deg);
+    top: -14px;
+    left: -12px;
+    z-index: 1;
+  }
+  .spider__body-help{
+    width: 24px;
+    height: 80px;
+    background: skyblue;
+    position: absolute;
+    top: -30px;
+    left: -24px;
+    z-index: 10;
+  }
+  .spider__body-help::before{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 80px;
+    background: skyblue;
+    position: absolute;
+    top: 0;
+    right: -106px;
+    z-index: 10;
+  }
+  
+  .spider__body-help-bottom{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: -45px;
+    background: skyblue;
+    transform: rotate(60deg);
+  }
+  
+  .spider__body-help-bottom::before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(60deg);
+    top: -60px;
+    left: 35px;
+  }
+  
+  
+  
+  /*???*/
+  
+  
+  .spider__leg-three{
+    height: 300px;
+    right: 0;  
+    transform: translateY(30px);
+  }
+  
+  .spider__block-three{
+    right: 0px;
+  }
+  
+  .spider__block-three::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(-20deg);
+    top: -38px;
+    right: 0px;
+    border-bottom: 6px solid black;
+    z-index: 3;
+  }
+  .spider__block-three::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(20deg);
+    top: 38px;
+    right: 0;
+    border-top: 6px solid black;
+    z-index: 3;
+  }
+  
+  .spider__block-help-three{
+    top: calc( 30% + 14px );
+    right: 0px;
+    border-left: 6px solid black;
+  }
+  
+  .spider__leg-four{
+    right: 40px;
+    // border: 1px solid red;
+  }
+  
+  .spider__leg-four .spider__block{
+    transform: translateX(-34px);
+  }
+  .spider__block-four::before{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(-20deg);
+    top: -38px;
+    right: 0px;
+    border-bottom: 6px solid black;
+    z-index: 3;
+  }
+  .spider__block-four::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: skyblue;
+    transform: rotate(20deg);
+    top: 38px;
+    right: 0px;
+    border-top: 6px solid black;
+    z-index: 3;
+  }
+  
+  .spider__block-help-four{
+    top: calc( 30% + 12px );
+    right: 34px;
+    border-right: 6px solid black;
+    background: transparent;
+  }
+  
+  

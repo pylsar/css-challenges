@@ -1,0 +1,166 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .bender{
+    width: 100%;
+    height: 100vh;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bender__head{
+    background: gray;
+    width: 200px;
+    height: 350px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border: 3px solid black;
+    position: relative;
+    box-shadow: inset 6px 0 3px white, inset -6px 0 3px white;
+    z-index: 5;
+  }
+  
+  .bender__eyes-box{
+    width: 250px;
+    height: 100px;
+    background: black;
+    position: relative;
+    top: 35%;
+    left: calc(50% - 125px);
+    border: 3px solid black;
+    border-radius: 35%;
+    box-shadow: inset 10px 0px 10px white, inset -10px 0px 10px white;
+    border-bottom: 2px solid black;
+  }
+  
+  .bender__eyes{
+    background: black;
+    width: 230px;
+    height: 86px;
+    overflow: hidden;
+    border-radius: 35%;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+  }
+  .bender__eye{
+    width: 90px;
+    height: 90px;
+    background: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .bender__eye--left{
+    left: 20px;
+  }
+  .bender__eye--right{
+    right: 20px;
+  }
+  .bender__eye::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .bender__eye-brow{
+    background: black;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 7;
+    top: -10px;
+    left: calc( 50% - 10px );
+    transform: rotate(45deg) translateX(-50%);
+  }
+  
+  .bender__mouth{
+    width: 160px;
+    height: 60px;
+    border: 3px solid black;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    border-radius: 30px 30px 60% 60%;
+    background: linear-gradient(black, transparent 3px), linear-gradient(90deg, black, transparent 3px), gold;
+    background-size: 31px 20px;
+  }
+  .bender__arrow-box{
+    position: absolute;
+    bottom: calc( 50vh + 316px);
+    left: 50%;
+    z-index: 1;
+  }
+  
+  .bender__arrow{
+    width: 50px;
+    height: 40px;
+    background: gray;
+    position: absolute;
+    top: 124px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    z-index: 3;
+    border: 3px solid black;
+    box-shadow: inset 5px 0px 3px white, inset -5px 0px 3px white;
+  }
+    
+  .bender__arrow-middle{
+    height: 70px;
+    width: 10px;
+    background: gray;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border: 3px solid black;
+    border-bottom: none;
+  }
+  
+  .bender__arrow-middle::before, .bender__arrow-middle::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: skyblue;
+    position: absolute;
+    top: -10px;
+    z-index: 10;
+    border-bottom: 2px solid black;
+  }
+  
+  .bender__arrow-middle::before{
+    left: 4px;
+    transform: rotate(87deg);
+  } 
+  .bender__arrow-middle::after{
+    right: 4px;
+    transform: rotate(-88deg);
+  }
+  .bender__arrow-circle{
+    width: 20px;
+    height: 20px;
+    background: gray;
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 3px solid black;
+    z-index: 3;
+    box-shadow: inset 1px 0px 1px white, inset -1px 0px 1px white;
+  }
