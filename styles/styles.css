@@ -1,0 +1,19 @@
+/* VARS  */
+
+:root{
+    --main-bg-spider: orange;
+    --spider: black;
+    --main-bg-bender: skyblue;
+    --bender-head: gray;
+    --secondary-bg-bender: gold;
+    --bender-border: black;
+    --bender-shadow: white;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
